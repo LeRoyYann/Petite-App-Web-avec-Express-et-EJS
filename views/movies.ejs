@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Films d'action</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>🎬 Films d'action</h1>
+    <ul>
+        <% movies.forEach(movie=> { %>
+            <li>
+                <%= movie.title %> (<%= movie.year %>)
+            </li>
+            <% }) %>
+    </ul>
+</body>
+
+</html>
