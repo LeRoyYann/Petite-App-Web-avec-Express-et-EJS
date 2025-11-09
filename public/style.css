@@ -7,3 +7,26 @@ body {
 li {
   margin: 0.5rem 0;
 }
+
+.card {
+  max-width: 700px;
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 8px;
+}
+img {
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin: 12px 0;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0bf;
+  text-decoration: none;
+}
+.btn-back:hover {
+  text-decoration: underline;
+}

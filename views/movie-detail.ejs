@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        <%= movie.title %> - Détail
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <a href="/" class="btn-back">← Back</a>
+
+    <div class="card">
+        <h1>
+            <%= movie.title %> (<%= movie.year %>)
+        </h1>
+        <% if (movie.poster) { %>
+            <img src="<%= movie.poster %>" alt="Poster <%= movie.title %>">
+            <% } %>
+
+                <p><strong>Director:</strong>
+                    <%= movie.director %>
+                </p>
+                <p><strong>Cast:</strong>
+                    <%= movie.cast.join(", ") %></p>
+
+    <h3>Summary</h3>
+    <p><%= movie.summary %></p>
+  </div>
+</body>
+</html>

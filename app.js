@@ -17,6 +17,11 @@ app.use(express.static(path.join(import.meta.dirname, "public")));
 // Routes
 app.use("/", movieRouter);
 
+// Page 404
+app.use((req, res) => {
+  res.status(404).render("404");
+});
+
 // Démarrage du serveur
 app.listen(PORT, () => {
   console.log(`Serveur lancé sur http://localhost:${PORT}`);
